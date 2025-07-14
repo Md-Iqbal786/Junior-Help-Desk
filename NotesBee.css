@@ -1,0 +1,101 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI';
+  background-color: #89d4ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: white;
+  width: 100vw;
+  height: 11vh;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Box */
+.box {
+  background-color: #053c65;
+  color: whitesmoke;
+  position: relative;
+  left: 30vw;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgb(2, 29, 51);
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-align: center;
+  max-width: 400px;
+  margin-bottom: 1rem;
+  margin-top: 20px;
+  
+}
+
+.box:hover {
+  transform: scale(1.02);
+}
+
+/* Hidden Notes Section */
+.notes-section {
+  display: none;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #004080;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  max-width: 400px;
+}
+
+/* Show class (toggle) */
+.notes-section.show {
+  display: block;
+}
+
+/* Notes List */
+.notes-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.notes-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.notes-section ul li a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: 500;
+}
