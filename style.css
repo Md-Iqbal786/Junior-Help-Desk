@@ -129,6 +129,17 @@ footer {
     gap: 0.5rem;
     margin-top: 1rem;
   }
+
+  .header{
+    font-size: 0.8rem;
+    display: grid;
+    flex-wrap: wrap;
+  }
+
+  .hero{
+   font-size: 0.8rem;
+   height: 40vh;
+  }
 }
 
 
