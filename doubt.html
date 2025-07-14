@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="doubt.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">🎓 Juniors Help Desk</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Notes</a></li>
+                <li><a href="#">Advice</a></li>
+                <li><a href="#">Placement</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="doubt-section">
+        <h2>Ask Your Doubt</h2>
+        <form id="doubtForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="doubt" placeholder="Type your doubt here..." required></textarea>
+            <button type="submit">Submit</button>
+            <p id="responseMsg"></p>
+        </form>
+    </div>
+    <script src="doubt.js"></script>
+</body>
+
+</html>

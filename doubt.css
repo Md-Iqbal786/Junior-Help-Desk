@@ -1,0 +1,99 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI';
+  background-color: #89d4ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: white;
+  width: 100vw;
+  height: 11vh;
+  position: fixed;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.doubt-section {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  top: 20vh;
+  background: #36b2f1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0);
+}
+
+.doubt-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2b0261;
+}
+
+#doubtForm input,
+#doubtForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#doubtForm button {
+  width: 100%;
+  padding: 12px;
+  background-color: #03215b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#doubtForm button:hover {
+  background-color: #05256e;
+}
+
+#responseMsg {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
