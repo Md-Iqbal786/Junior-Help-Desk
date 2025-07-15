@@ -24,7 +24,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .logo {
@@ -130,15 +129,16 @@ footer {
     margin-top: 1rem;
   }
 
+}
+
+@media (max-width: 610px){
   .header{
     font-size: 0.8rem;
-    display: grid;
-    flex-wrap: wrap;
+    display: flex;
   }
 
-  .hero{
-   font-size: 0.8rem;
-   height: 40vh;
+  .nav-links li a{
+    visibility: hidden;
   }
 }
 
