@@ -62,7 +62,7 @@ header {
 .content-box{
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
 .labs , .viva{
@@ -89,4 +89,13 @@ header {
 .labs a:hover , .viva a:hover{
     color: aqua;
     font-size: 1.6rem;
+}
+
+@media(max-width:438px){
+  .content-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+    position: relative;
+    left: 1.8rem;
+}
 }
