@@ -1,0 +1,92 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI';
+  background-color: #89d4ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: white;
+  width: 100vw;
+  height: 11vh;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 610px){
+  .header{
+    font-size: 0.8rem;
+    display: flex;
+  }
+
+  .nav-links li a{
+    visibility: hidden;
+  }
+}
+
+/* content-box */
+
+.content-box{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.labs , .viva{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right , rgb(3, 33, 85) , rgb(38, 133, 207));
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    flex-direction: column;
+    margin: 2rem;
+
+}
+
+.labs  a , .viva a{
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.labs a:hover , .viva a:hover{
+    color: aqua;
+    font-size: 1.6rem;
+}
