@@ -20,27 +20,28 @@ header {
   width: 100vw;
   height: 11vh;
   position: fixed;
-  padding: 1rem 2rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
 .nav-links li a {
   color: white;
   text-decoration: none;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -48,6 +49,16 @@ header {
   text-decoration: underline;
 }
 
+@media (max-width: 610px){
+  .header{
+    font-size: 0.8rem;
+    display: flex;
+  }
+
+  .nav-links li a{
+    visibility: hidden;
+  }
+}
 /* Hero Section */
 .hero {
   width: 100vw;
@@ -58,28 +69,28 @@ header {
   justify-content: center;
   padding: 1rem 1rem;
   background-color: #34b0f2c4;
-  color: rgb(49, 3, 86);
+  color: rgb(1, 37, 104);
 }
 
 .hero h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 /* Cards Section */
 
 .card a{
   text-decoration: none;
-  color: rgb(4, 33, 101);
+  color: rgb(1, 37, 104);
 }
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 5rem;
   padding: 2rem;
 }
 
@@ -97,7 +108,7 @@ header {
 
 .card h2 {
   margin-bottom: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 /* Footer */
@@ -132,16 +143,7 @@ footer {
 
 }
 
-@media (max-width: 610px){
-  .header{
-    font-size: 0.8rem;
-    display: flex;
-  }
 
-  .nav-links li a{
-    visibility: hidden;
-  }
-}
 
 
 

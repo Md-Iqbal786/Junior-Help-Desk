@@ -1,0 +1,139 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI";
+  background-color: #89d4ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: white;
+  width: 100vw;
+  height: 11vh;
+  position: fixed;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 610px) {
+  .header {
+    font-size: 0.8rem;
+    display: flex;
+  }
+
+  .nav-links li a {
+    visibility: hidden;
+  }
+}
+
+/* advices-css */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #3f0566;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: linear-gradient(to right, rgb(3, 33, 85), rgb(38, 133, 207));
+  color: antiquewhite;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  
+}
+
+@keyframes cardAnime {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.card h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  
+}
+
+.meta {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.advice {
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
