@@ -76,6 +76,15 @@ header {
   background-color: #014282;
 }
 
+@media(max-width: 500px){
+  .side-bar ul li {
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(250px , minmax));
+  border: 1px solid black;
+  border-radius: 15px;
+  }
+
+}
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -90,7 +99,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-
+  
 }
 
 .content{
@@ -109,13 +118,7 @@ header {
 
 @media (max-width:600px){
     .content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    position: relative;
-    align-items: center;
-    width: 100%;
-    height: auto;
+    display: none;
     }
     
 }
