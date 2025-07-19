@@ -72,6 +72,12 @@ header {
   color: rgb(1, 37, 104);
 }
 
+@media (max-width: 438px){
+  .hero{
+    height: 45vh;
+  }
+}
+
 .hero h1 {
   font-size: 2.4rem;
   margin-bottom: 1rem;
