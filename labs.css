@@ -82,7 +82,13 @@ header {
     justify-content: center;
     color: aliceblue;
     flex-direction: column;
+    transition: transform 0.5s ease-in ;
 }
+
+.lab:hover {
+  transform: scale(1.05);
+} 
+
 .lab a{
     font-size: 1.5rem;
     color: aliceblue;
