@@ -18,7 +18,7 @@ header {
   color: white;
   width: 100vw;
   height: 11vh;
-  position: fixed;
+  /* position: fixed; */
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -46,4 +46,47 @@ header {
 
 .nav-links li a:hover {
   text-decoration: underline;
+}
+
+
+.y-links{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: #37b8ef;
+  border-radius: 15px;
+  box-shadow: 4px 4px rgb(1, 34, 95);
+}
+
+.beeYlinks{
+  height: 40vh;
+  width: 60vw;
+  margin-top: 30px;
+  background-color: #e5eae3;
+  border-radius: 15px;
+  box-shadow: 4px 4px 15px rgb(1, 34, 95);
+}
+
+.beeYlinks li{
+  list-style-type: none;
+  padding: 1rem;
+
+}
+.beeYlinks li a{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+  background-color: #043873;
+  color: #e5eae3;
+  font-size: 1.3rem;
+  text-decoration: none;
+  border-radius: 10px;
+  padding-left: 1rem;
+  
+}
+
+.beeYlinks li a:hover{
+  background-color: #03146c;
+
 }
